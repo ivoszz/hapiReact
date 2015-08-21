@@ -1,0 +1,23 @@
+{
+  "name": "hapiReact",
+  "version": "0.1.0",
+  "description": "React templating with hapi",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ivoszz/hapiReact"
+  },
+  "keywords": [
+    "hapi",
+    "react"
+  ],
+  "author": "ivoszz <ivoszz@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ivoszz/hapiReact/issues"
+  },
+  "homepage": "https://github.com/ivoszz/hapiReact"
+}
