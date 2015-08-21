@@ -3,7 +3,7 @@ exports.register = function (server, options, next) {
     method: 'GET',
     path: '/',
     handler: function (request, reply) {
-      reply('Home Page');
+      reply.view('index', {name: 'ivoszz', title: 'ivoszz\'s App'});
     }
   });
 

@@ -27,6 +27,9 @@
   "dependencies": {
     "good": "^6.3.0",
     "good-console": "^5.0.3",
-    "hapi": "^9.0.3"
+    "hapi": "^9.0.3",
+    "hapi-react-views": "^3.1.0",
+    "react": "^0.13.3",
+    "vision": "^3.0.0"
   }
 }
