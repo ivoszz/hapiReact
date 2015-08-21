@@ -4,6 +4,7 @@
   "description": "React templating with hapi",
   "main": "src/server.js",
   "scripts": {
+    "start": "node src/server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/ivoszz/hapiReact/issues"
   },
-  "homepage": "https://github.com/ivoszz/hapiReact"
+  "homepage": "https://github.com/ivoszz/hapiReact",
+  "engines": {
+    "node": ">=3.0.0"
+  },
+  "dependencies": {
+    "hapi": "^9.0.3"
+  }
 }
