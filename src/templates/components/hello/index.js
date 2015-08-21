@@ -1,11 +1,13 @@
-var React = require('react');
+import React from 'react';
 
-var HelloMessage = React.createClass({
-  render: function () {
+export default class HelloMessage extends React.Component {
+
+  render () {
     return (
       <div>Hello {this.props.name}!</div>
     );
   }
-});
+}
 
-module.exports = HelloMessage;
+HelloMessage.propTypes = {name: React.PropTypes.string};
+HelloMessage.defaultProps = {name: 'ivoszz'};

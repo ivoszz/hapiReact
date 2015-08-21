@@ -1,4 +1,4 @@
-exports.register = function (server, options, next) {
+const register = function (server, options, next) {
   server.route({
     method: 'GET',
     path: '/',
@@ -10,7 +10,9 @@ exports.register = function (server, options, next) {
   next();
 };
 
-exports.register.attributes = {
+register.attributes = {
   name: 'homePage',
   version: '0.1.0'
 };
+
+export default register;

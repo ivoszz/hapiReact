@@ -1,16 +1,19 @@
-var React = require('react');
+import React from 'react';
 
-var DefaultLayout = require('./components/layout');
-var HelloMessage = require('./components/hello');
+import DefaultLayout from './components/layout';
+import HelloMessage from './components/hello';
 
-var HomePage = React.createClass({
-  render: function () {
+export default class HomePage extends React.Component {
+  render () {
     return (
       <DefaultLayout title={this.props.title}>
         <HelloMessage name={this.props.name} />
       </DefaultLayout>
     );
   }
-});
+}
 
-module.exports = HomePage;
+HomePage.propTypes = {
+  name: React.PropTypes.string,
+  title: React.PropTypes.string.isRequired
+};

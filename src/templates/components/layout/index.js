@@ -1,7 +1,7 @@
-var React = require('react');
+import React from 'react';
 
-var DefaultLayout = React.createClass({
-  render: function() {
+export default class DefaultLayout extends React.Component {
+  render () {
     return (
       <html>
         <head><title>{this.props.title}</title></head>
@@ -9,6 +9,9 @@ var DefaultLayout = React.createClass({
       </html>
     );
   }
-});
+}
 
-module.exports = DefaultLayout;
+DefaultLayout.propTypes = {
+  title: React.PropTypes.string.isRequired,
+  children: React.PropTypes.object
+};
