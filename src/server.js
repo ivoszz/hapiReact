@@ -1,12 +1,24 @@
+import Path from 'path';
 import Hapi from 'hapi';
 import Good from 'good';
 import GoodConsole from 'good-console';
+import Inert from 'inert';
 import Vision from 'vision';
 import HapiReactViews from 'hapi-react-views';
 
 import HomePage from './plugins/homePage';
 
-const server = new Hapi.Server();
+const serverOptions = {
+  connections: {
+    routes: {
+      files: {
+        relativeTo: Path.join(__dirname, '..', 'build')
+      }
+    }
+  }
+};
+
+const server = new Hapi.Server(serverOptions);
 server.connection({port: 5200});
 
 server.register([{
@@ -20,6 +32,8 @@ server.register([{
       }
     }]
   }
+}, {
+  register: Inert
 }, {
   register: Vision
 }, {
