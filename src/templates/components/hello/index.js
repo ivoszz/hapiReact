@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class HelloMessage extends React.Component {
+class HelloMessage extends React.Component {
 
   render () {
     return (
@@ -11,3 +11,5 @@ export default class HelloMessage extends React.Component {
 
 HelloMessage.propTypes = {name: React.PropTypes.string};
 HelloMessage.defaultProps = {name: 'ivoszz'};
+
+export default HelloMessage;
