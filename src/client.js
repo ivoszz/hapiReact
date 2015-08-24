@@ -1,4 +1,4 @@
 import React from 'react';
-import HelloMessage from 'components/hello';
+import App from 'components/app';
 
-React.render(<HelloMessage />, document.getElementById('content'));
+React.render(<App />, document.getElementById('content'));
