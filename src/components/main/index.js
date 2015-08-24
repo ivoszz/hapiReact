@@ -2,15 +2,15 @@ import React from 'react';
 
 import HelloMessage from 'components/hello';
 
-class Content extends React.Component {
+class Main extends React.Component {
   render () {
     return (
-      <section>
-        Content Section
+      <main>
+        <p>Main Content</p>
         <HelloMessage />
-      </section>
+      </main>
     );
   }
 }
 
-export default Content;
+export default Main;
