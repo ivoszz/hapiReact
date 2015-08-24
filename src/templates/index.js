@@ -1,6 +1,6 @@
 import React from 'react';
 
-import DefaultLayout from './components/layout';
+import DefaultLayout from '../components/layout';
 
 class HomePage extends React.Component {
   render () {

@@ -1,4 +1,4 @@
 import React from 'react';
-import HelloMessage from 'templates/components/hello';
+import HelloMessage from 'components/hello';
 
 React.render(<HelloMessage />, document.getElementById('content'));
