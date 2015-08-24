@@ -4,7 +4,7 @@ const register = function (server, options, next) {
       method: 'GET',
       path: '/',
       handler: function (request, reply) {
-        reply.view('index', {name: 'ivoszz', title: 'ivoszz\'s App'});
+        reply.view('index', {title: 'ivoszz\'s App'});
       }
     }, {
       method: 'GET',

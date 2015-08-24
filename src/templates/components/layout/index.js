@@ -9,15 +9,17 @@ class DefaultLayout extends React.Component {
           <title>{this.props.title}</title>
           <link rel='stylesheet' type='text/css' href='/assets/styles/style.css' />
         </head>
-        <body>{this.props.children}</body>
+        <body>
+          <div id='content'></div>
+          <script src='/assets/scripts/bundle.js'></script>
+        </body>
       </html>
     );
   }
 }
 
 DefaultLayout.propTypes = {
-  title: React.PropTypes.string.isRequired,
-  children: React.PropTypes.object
+  title: React.PropTypes.string.isRequired
 };
 
 export default DefaultLayout;

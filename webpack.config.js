@@ -6,8 +6,6 @@ const srcPath = path.join(__dirname, 'src');
 module.exports = {
   devtool: 'inline-source-map',
   entry: [
-    'webpack-dev-server/client?http://localhost:5200',
-    'webpack/hot/only-dev-server',
     './src/client'
   ],
   output: {
