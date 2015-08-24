@@ -4,14 +4,15 @@ const path = require('path');
 const srcPath = path.join(__dirname, 'src');
 
 module.exports = {
+  target: 'web',
   devtool: 'inline-source-map',
   entry: [
     './src/client'
   ],
   output: {
-    path: path.join(__dirname, 'build/scripts/'),
+    path: path.join(__dirname, 'build', 'scripts'),
     filename: 'bundle.js',
-    publicPath: 'http://localhost:5200'
+    publicPath: '/'
   },
   resolve: {
     root: srcPath,
@@ -24,7 +25,11 @@ module.exports = {
   ],
   module: {
     loaders: [
-      {test: /\.js$/, loaders: ['react-hot', 'babel'], exclude: /node_modules/}
+      {
+        test: /\.js$/,
+        loaders: ['react-hot', 'babel-loader?stage=0'],
+        exclude: /node_modules/
+      }
     ]
   }
 };
