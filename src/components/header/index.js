@@ -1,5 +1,6 @@
 import React from 'react';
 
+import DisplayText from 'components/display-text';
 import TimePassed from 'components/time-passed';
 
 class Header extends React.Component {
@@ -7,7 +8,7 @@ class Header extends React.Component {
   render () {
     return (
       <header>
-        <p>Application Header</p>
+        <DisplayText text={this.props.data.name} />
         <TimePassed time={this.props.data.time} />
       </header>
     );
