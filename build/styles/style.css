@@ -1,6 +1,39 @@
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+#app {
+  height: 100%;
+}
+
+header {
+  height: 50px;
+  color: lightgray;
+  background-color: black;
+}
+
+main {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto 100px;
+}
+
+main::after, footer {
+  height: 100px;
+}
+
+footer {
+  background-color: orange;
+}
+
 .hello-message {
   width: 50%;
   height: 2em;
   color: yellow;
-  background-color: black;
+  background-color: blue;
 }

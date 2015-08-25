@@ -9,12 +9,14 @@ class App extends React.Component {
   render () {
     return (
       <div id='app'>
-        <Header />
+        <Header data={this.props.data} />
         <Main />
         <Footer />
       </div>
     );
   }
 }
+
+App.propTypes = {data: React.PropTypes.object};
 
 export default App;
