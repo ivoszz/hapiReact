@@ -1,10 +1,15 @@
 import React from 'react';
 
+import TimePassed from 'components/time-passed';
+
 class Header extends React.Component {
 
   render () {
     return (
-      <header>Application Header</header>
+      <header>
+        <p>Application Header</p>
+        <TimePassed time={this.props.data.time} />
+      </header>
     );
   }
 }

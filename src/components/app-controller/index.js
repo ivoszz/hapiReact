@@ -20,7 +20,7 @@ export default class AppController extends React.Component {
   }
 
   componentDidMount () {
-    this.setState(mockData);
+    this.setState({data: mockData});
   }
 
   render () {
