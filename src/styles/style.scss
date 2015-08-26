@@ -1,0 +1,30 @@
+// Global requirements
+@import "variables";
+@import "primer/mixins";
+
+// Basic styles
+@import "primer/normalize";
+@import "primer/base";
+
+@import "primer/utility";
+
+header {
+  //height: 50px;
+  padding: 10px 0;
+  color: $brand-gray-light;
+  background-color: $brand-gray-dark;
+}
+
+footer {
+  //height: 100px;
+  padding: 10px 0;
+  color: $brand-gray-light;
+  background-color: $brand-gray-dark;
+}
+
+.hello-message {
+  width: 20%;
+  height: 2em;
+  color: yellow;
+  background-color: blue;
+}
