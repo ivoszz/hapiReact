@@ -43,7 +43,6 @@ main {
 }
 
 footer {
-  //height: 100px;
   padding: .5rem 0;
   color: $brand-gray-light;
   background-color: $brand-gray-dark;
@@ -51,11 +50,4 @@ footer {
   strong {
     color: #FFF;
   }
-}
-
-.hello-message {
-  width: 20%;
-  height: 2em;
-  color: yellow;
-  background-color: blue;
 }
