@@ -8,11 +8,23 @@
 
 @import "primer/utility";
 
+// Sticky footer by flexbox
+
+#app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 header {
   //height: 50px;
   padding: 10px 0;
   color: $brand-gray-light;
   background-color: $brand-gray-dark;
+}
+
+main {
+  flex: 1;
 }
 
 footer {
