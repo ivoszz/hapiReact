@@ -5,33 +5,52 @@
 // Basic styles
 @import "primer/normalize";
 @import "primer/base";
+@import "primer/layout";
 
 @import "primer/utility";
 
 // Sticky footer by flexbox
 
 #app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  min-height: 100vh;
+
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+
+  min-height: 100vh;
 }
 
 header {
-  //height: 50px;
-  padding: 10px 0;
+  padding: .5rem 0;
   color: $brand-gray-light;
   background-color: $brand-gray-dark;
+
+  strong {
+    color: #FFF;
+  }
 }
 
 main {
-  flex: 1;
+  -webkit-box-flex: 1 0 auto;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 footer {
   //height: 100px;
-  padding: 10px 0;
+  padding: .5rem 0;
   color: $brand-gray-light;
   background-color: $brand-gray-dark;
+
+  strong {
+    color: #FFF;
+  }
 }
 
 .hello-message {

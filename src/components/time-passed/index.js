@@ -17,8 +17,12 @@ export default class TimePassed extends React.Component {
     const now = moment();
     return (
       <span>
-        Uptime: {moment.duration(now.diff(moment(this.props.time)))
-          .format('d [days], h [hrs], m [min], s [sec]')}
+        Uptime:
+        &nbsp;
+        <strong>
+          {moment.duration(now.diff(moment(this.props.time)))
+            .format('d [days], h [hrs], m [min], s [sec]')}
+        </strong>
       </span>
     );
   }
