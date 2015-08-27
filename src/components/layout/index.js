@@ -10,7 +10,7 @@ class DefaultLayout extends React.Component {
           <link rel='stylesheet' type='text/css' href='/assets/styles/style.css' />
         </head>
         <body>
-          <div id='content'></div>
+          <div id='content' className='container'></div>
           <script src='/assets/scripts/bundle.js'></script>
         </body>
       </html>

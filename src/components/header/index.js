@@ -8,10 +8,15 @@ class Header extends React.Component {
 
   render () {
     return (
-      <header>
-        <DisplayStatus status={this.props.data.status} />
-        <DisplayText text={this.props.data.name} />
-        <TimePassed time={this.props.data.time} />
+      <header className='clearfix'>
+        <div className='left'>
+          <DisplayText text={this.props.data.name} />
+          &nbsp;
+          <DisplayStatus status={this.props.data.status} />
+        </div>
+        <div className='right'>
+          <TimePassed time={this.props.data.time} />
+        </div>
       </header>
     );
   }
